@@ -5,6 +5,8 @@
 # <email>   quantm@unist.ac.kr  kast.jo@googlemail.com msarahan@gmail.com</email>
 ############################################################################
 
+cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+
 # collect source files
 
 file( GLOB  hdr *.hpp *.h )
