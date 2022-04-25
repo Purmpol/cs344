@@ -11,4 +11,9 @@ file( GLOB  hdr *.hpp *.h )
 file( GLOB  cu  *.cu)
 SET (HW1_files main.cpp reference_calc.cpp compare.cpp)
 
+find_package(OpenCV REQUIRED)
+find_package(CUDA REQUIRED)
+
+link_libraries(${OpenCV_LIBS} )
+
 CUDA_ADD_EXECUTABLE(HW1 ${HW1_files} ${hdr} ${cu})
